@@ -1,0 +1,66 @@
+{# empty Twig template #}
+{% extends "PPCoreBundle::layout.html.twig" %}
+
+{% block pp_body %}
+
+<div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="bloc-login floatL">
+                    <h2>Connexion</h2>
+                    <form method="post">
+                        <label>Pseudo:</label>
+                        <br/>
+                        <input type="text" id="pseudol" name="pseudol"/>
+                        <br/>
+                        <label>Mot de passe:</label>
+                        <br/>
+                        <input type="text" id="pswl" name="pswl"/>
+                        <br/>
+                        <button type="submit" class="submit-connexion submit btn btn-default">Connexion</button>
+                    </form>
+                </div>
+                <div class="bloc-inscription floatR">
+                    <h2>Inscrivez-vous !</h2>
+                    <div class="well floatL">
+                        {{ form(form) }}
+                    </div>
+                    
+                    
+                    <div class="floatL">
+                        <form method="post">
+                            <label class="">Adresse mail*:</label>
+                            <br />
+                            <input class="" type="text" id="mail" name="mail"/>
+                            <br/>
+                            <label class="">Pseudo*:</label>
+                            <br />
+                            <input class="" type="text" id="pseudo" name="pseudo"/>
+                            <br/>
+                            <label class="">Mot de passe*:</label>
+                            <br />
+                            <input class="" type="text" id="psw" name="psw"/>
+                            <br/>
+                            <label class="">Vérification mdp*:</label>
+                            <br />
+                            <input class="" type="text" id="veri-psw" name="veri-psw"/>
+                        </form>
+
+                         <p>* champs obligatoires</p>
+                    </div>
+
+                    <div class="floatR inlay-parc">
+                        <img src="http://placehold.it/550x450" alt="" width="200"/>
+                         <div class="clearfix"></div>
+                        <button class="submit btn btn-default center-button">Pacourir</button>
+                    </div>
+                    <div class="clearfix"></div>
+                    <button type="submit" class="submit-inscription submit btn btn-default">S'inscrire</button>
+                    
+                </div>
+            <div class="clearfix"></div>
+            </div>
+        </div>   
+    </div>    
+{% endblock %}
+

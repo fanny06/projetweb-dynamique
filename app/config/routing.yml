@@ -1,0 +1,7 @@
+pp_core:
+    resource: "@PPCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,8 @@
+core_home:
+    path:     /{page}
+    defaults: 
+        _controller: PPUserBundle:Views:index
+        page: 1
+    requirements:
+        page: \d*
+

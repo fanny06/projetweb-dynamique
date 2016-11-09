@@ -1,0 +1,16 @@
+{% extends "PPCoreBundle::layout.html.twig" %}
+
+{% block body %}
+    {% block pp_body %}
+            <div class="container">
+        <div class="row">
+            <div class="box">
+                <h2 class="text-center">Quelques astuces pour vous aider</h2>
+                    {{ include("PPCoreBundle:Views:bloc.html.twig") }}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    {% endblock %}
+{% endblock %}

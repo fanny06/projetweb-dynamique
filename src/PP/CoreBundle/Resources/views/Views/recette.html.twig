@@ -1,0 +1,50 @@
+{# empty Twig template #}
+{% extends "PPCoreBundle::layout.html.twig" %}
+
+{% block pp_body %}
+<div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="text-center">
+                    <h1>Recette du dessert</h1>
+                    <img class="floatL" src="http://placehold.it/750x450" alt="" width="400"/>
+                    <div class="floatL icon-recette">
+                        <img class="floatL icon-recette" src="http://placehold.it/450x450" alt="" width="60"/>
+                        <p class="text-icon floatR">Temps de cuisson</p>
+                        <div class="clearfix"></div>
+                        <img class="floatL icon-recette" src="http://placehold.it/450x450" alt="" width="60"/> 
+                        <p class="text-icon">Difficulté</p>
+                    </div>
+                    <div class="floatR vote">
+                        <p>Vote:</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    
+                    <div class="ingredients floatL">
+                        <h2>Ingrédients</h2>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="recette floatR">
+                        <h2>Recette</h2>
+                        <ol>
+                            <li></li>
+                        </ol>
+                    </div>
+                    
+                    <h2>Commentaires</h2>
+                    <div class="floatL form-group col-lg-12">
+                        <textarea class=" form-control" rows="3" ></textarea>
+                    </div>
+                    <div class="floatR form-group col-lg-12">
+                        <input type="hidden" name="envoyer" value="contact">
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

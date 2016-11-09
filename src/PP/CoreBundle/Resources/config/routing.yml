@@ -1,0 +1,76 @@
+core_home:
+    path:     /{page}
+    defaults: 
+        _controller: PPCoreBundle:Views:index
+        page: 1
+    requirements:
+        page: \d*
+
+core_recettes:
+    path:     /recettes
+    defaults:
+        _controller: PPCoreBundle:Views:recettes
+ 
+core_recette:
+    path:     /recette
+    defaults:
+        _controller: PPCoreBundle:Views:recette
+
+core_astuces:
+    path:     /astuces
+    defaults:
+        _controller: PPCoreBundle:Views:astuces
+
+core_astuce:
+    path:     /{nom-astuce}
+    defaults:
+        _controller: PPCoreBundle:Views:astuce
+
+core_contact:
+    path:     /contact
+    defaults:
+        _controller: PPCoreBundle:Views:contact
+
+core_contact:
+    path:     /login
+    defaults:
+        _controller: PPCoreBundle:Views:login
+        
+core_login:
+    path:     /login
+    defaults: 
+        _controller: PPCoreBundle:Views:login
+        
+core_modification:
+    path:     /modification
+    defaults:
+        _controller: PPCoreBundle:Views:modification
+
+core_profil:
+    path:     /profil
+    defaults:
+        _controller: PPCoreBundle:Views:profil
+
+core_resultats:
+    path:     /resultats
+    defaults:
+        _controller: PPCoreBundle:Views:resultats
+        
+core_add:
+    path:    /add
+    defaults:
+        _controller: PPCoreBundle:Views:add
+        
+core_edit:
+    path:     /edit/{id}
+    defaults:
+        _controller: PPCoreBundle:Views:edit
+    requirements:
+        id: \id+
+
+core_delete:
+    path:     /delete/{id}
+    defaults:
+        _controller: PPCoreBundle:Views:delete
+    requirements:
+        id: \id+
